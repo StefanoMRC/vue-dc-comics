@@ -1,0 +1,7 @@
+@mixin lista($jcontent, $fDir, $alItem) {
+    list-style-type: none;
+    display: flex;
+    justify-content: #{$jcontent};
+    flex-direction: #{$fDir};
+    align-items: #{alItem};
+}

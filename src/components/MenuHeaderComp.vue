@@ -1,7 +1,9 @@
 <template>
   <div>
       <ul>
-          <li></li>
+          <li v-for="(element, id) in menuTop" :key="id">
+              <a href="`${element.link}`">{{element.nome}}</a>
+          </li>
       </ul>
   </div>
 </template>
@@ -61,11 +63,38 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-div{
-    background: red;
-    padding: 0;
-    margin: 0;
-    width: 40%;
-    text-align: center;
-}
+@import '../assets/style/mixin.scss';
+@import '../assets/style/variabili.scss';
+ div{
+     width: 65%;
+     margin: 0 auto;
+         ul{
+            @include lista(center, row, center);
+            margin: 0;
+            padding: 0;
+            height: 98%;
+                li{
+                    height: 100%;
+                    padding:0 10px;
+                    font-size: 1.2em;
+                    text-transform: uppercase;
+                    display: flex;
+                    align-items: center;
+                    &:hover{
+                        border-bottom: 3px solid $blu;
+                        a{
+                            color: $blu;
+                        }
+                    }
+                        a{
+                            text-decoration: none;
+                            padding: 50px 0;
+                            color: $nero;
+                        }
+                }
+
+        }
+    }   
+
+
 </style>

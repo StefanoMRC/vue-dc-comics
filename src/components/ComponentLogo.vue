@@ -14,10 +14,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 div{
-    background: red;
-    padding: 0;
+
+    padding: 10px;
     margin: 0;
-    width: 40%;
+    width: 35%;
     text-align: center;
 }
 </style>
