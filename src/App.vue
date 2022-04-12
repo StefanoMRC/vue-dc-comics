@@ -8,6 +8,9 @@
         <SectionUno/>
         <SectionDue/>
       </main>
+      <footer>
+        <FooterSezUno/>
+      </footer>
 
     </div>
 </template>
@@ -18,6 +21,7 @@ import ComponentLogo from './components/ComponentLogo.vue'
 import MenuHeaderComp from './components/MenuHeaderComp.vue'
 import SectionUno from './components/SectionUno.vue'
 import SectionDue from './components/SectionDue.vue'
+import FooterSezUno from './components/FooterSezUno.vue'
 
 export default {
   name: 'App',
@@ -26,7 +30,8 @@ export default {
     ComponentLogo,
     MenuHeaderComp,
     SectionUno,
-    SectionDue
+    SectionDue,
+    FooterSezUno,
   }
 }
 </script>
