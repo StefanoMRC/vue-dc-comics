@@ -1,8 +1,14 @@
 <template>
-    <header>
-      <ComponentLogo/>
-      <MenuHeaderComp/>
-    </header>
+    <div>
+      <header>
+        <ComponentLogo/>
+        <MenuHeaderComp/>
+      </header>
+      <main>
+        
+      </main>
+
+    </div>
 </template>
 
 <script>
