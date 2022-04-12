@@ -2,7 +2,7 @@
   <div>
       <ul>
           <li v-for="(element, index) in listaSez2" :key="index">
-              <img :src="`../assets/img/${element.img}`" alt="">
+              <img :src="`${element.img}`" alt="">
               <h2>{{element.nome}}</h2>
           </li>
       </ul>
@@ -10,31 +10,38 @@
 </template>
 
 <script>
+import image from "../assets/img/buy-comics-digital-comics.png"
+import image1 from "../assets/img/buy-comics-merchandise.png"
+import image2 from "../assets/img/buy-comics-subscriptions.png"
+import image3 from "../assets/img/buy-comics-shop-locator.png"
+import image4 from "../assets/img/buy-dc-power-visa.svg"
+
 export default {
+
   name: 'SectionDue',
   data() {
       return {
           listaSez2:[
                 {
-                  img:'buy-comics-digital-comics.png',
+                  img:image,
                   nome:'digital comics'
                 },
-                {
-                  img:'buy-comics-merchandise.png',
-                  nome:'dc merchandise'
-                },
-                {
-                  img:'buy-comics-subscriptions.png',
-                  nome:'subscriptions'
-                },
-                {
-                  img:'buy-comics-shop-locator.png',
-                  nome:'comic shop locator'
-                },
-                {
-                  img:'buy-dc-power-visa.svg',
-                  nome:'dc power visa'
-                },
+                 {
+                   img:image1,
+                   nome:'dc merchandise'
+                 },
+                 {
+                   img:image2,
+                   nome:'subscriptions'
+                 },
+                 {
+                   img:image3,
+                   nome:'comic shop locator'
+                 },
+                 {
+                   img:image4,
+                   nome:'dc power visa'
+                 },
           ]
       }
   },
@@ -55,10 +62,15 @@ div{
             padding: 0;
         li{
             display: flex;
+            align-items: center;
             padding: 20px;
             text-transform: uppercase;
             color: $bianco;
             font-size: 0.5em;
+            img{
+                height: 50px;
+                padding: 0 10px;
+            }
         }    
    }
 }
