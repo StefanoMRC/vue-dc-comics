@@ -17,7 +17,7 @@ div{
 
     padding: 10px;
     margin: 0;
-    width: 35%;
-    text-align: center;
+    width: 20%;
+    
 }
 </style>

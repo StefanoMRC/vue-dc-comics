@@ -42,6 +42,7 @@ export default {
   }
   header{
     display: flex;
-
+    width: 80%;
+    margin: 0 auto;
   }
 </style>

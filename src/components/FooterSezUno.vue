@@ -1,41 +1,48 @@
 <template>
-  <div class="cont">
-      <div>
-          <div>
-                <h2>dc comics</h2>
+  <div class="contPrincipale">
+      <div class="contSecondario">
+            <div class="cont">
+                <div>
+                    <div class="col">
+                            <h2>dc comics</h2>
 
-                <ul>             
-                    <li v-for="(element,index) in comicsList" :key="index">
-                        <a :href="`${element.link}`">{{element.nome}}</a>
-                    </li>
-                </ul>
+                            <ul>             
+                                <li v-for="(element,index) in comicsList" :key="index">
+                                    <a :href="`${element.link}`">{{element.nome}}</a>
+                                </li>
+                            </ul>
 
-                <h2>shop</h2>
+                            <h2>shop</h2>
 
-                <ul>
-                    <li v-for="(element,index) in shopList" :key="index">
-                        <a :href="`${element.link}`">{{element.nome}}</a>
-                    </li>
-                </ul>
-          </div>
+                            <ul>
+                                <li v-for="(element,index) in shopList" :key="index">
+                                    <a :href="`${element.link}`">{{element.nome}}</a>
+                                </li>
+                            </ul>
+                    </div>
 
-        </div>
-      <div>
-          <h2>dc</h2>
+                </div>
+                <div class="col">
+                    <h2>dc</h2>
 
-          <ul>
-              <li v-for="(element,index) in dcList" :key="index">
-                  <a :href="`${element.link}`">{{element.nome}}</a>
-              </li>
-          </ul>
-      </div>
-      <div>
-          <h2>sites</h2>
-          <ul>
-              <li v-for="(element,index) in sitesList" :key="index">
-                  <a :href="`${element.link}`">{{element.nome}}</a>
-              </li>
-          </ul>
+                    <ul>
+                        <li v-for="(element,index) in dcList" :key="index">
+                            <a :href="`${element.link}`">{{element.nome}}</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2>sites</h2>
+                    <ul>
+                        <li v-for="(element,index) in sitesList" :key="index">
+                            <a :href="`${element.link}`">{{element.nome}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cont2">
+
+            </div>
       </div>
   </div>
 </template>
@@ -162,28 +169,49 @@ export default {
 <style scoped lang="scss">
 @import '../assets/style/variabili.scss';
 @import '../assets/style/mixin.scss';
-.cont{
-    display: flex;
-    background-image: url(../assets/img/footer-bg.jpg);
-}
-   
-    h2{
-        color: $bianco;
-        text-transform: uppercase;
-        font-size: 1em;  
-    }
-    ul{
-    @include lista(center, column, center);
-            margin: 0;
-            padding: 0 30px;
-        li{
-            a{
-                padding: 10px 0;
-                text-decoration: none;
-                color: $grigio;
-            }
-        }
-    }
 
+.contPrincipale{
+    
+    background-image: url(../assets/img/footer-bg.jpg);
+    
+    .contSecondario{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+            .cont{  
+                width: 50%;
+                display: flex;
+                
+            }
+            .col{
+                padding: 0 30px;
+            }
+            h2{
+                color: $bianco;
+                text-transform: uppercase;
+                font-size: 1.3em;  
+            }
+            ul{
+            @include lista(center, column, center);
+                    margin: 0;
+                    padding: 0;
+                li{
+                    a{
+                        padding: 10px 0;
+                        text-decoration: none;
+                        color: $grigio;
+                    }
+                }
+            }
+            .cont2{
+                width: 50%;
+                height: 400px;
+                background-image: url(../assets/img/dc-logo-bg.png);
+                background-position: center; 
+                background-repeat:no-repeat ;
+            }
+    }
+}
 
 </style>

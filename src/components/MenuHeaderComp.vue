@@ -66,7 +66,7 @@ export default {
 @import '../assets/style/mixin.scss';
 @import '../assets/style/variabili.scss';
  div{
-     width: 65%;
+     width: 80%;
      margin: 0 auto;
          ul{
             @include lista(center, row, center);
