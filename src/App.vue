@@ -10,6 +10,7 @@
       </main>
       <footer>
         <FooterSezUno/>
+        <FooterSezDue/>
       </footer>
 
     </div>
@@ -22,6 +23,7 @@ import MenuHeaderComp from './components/MenuHeaderComp.vue'
 import SectionUno from './components/SectionUno.vue'
 import SectionDue from './components/SectionDue.vue'
 import FooterSezUno from './components/FooterSezUno.vue'
+import FooterSezDue from './components/FooterSezDue.vue'
 
 export default {
   name: 'App',
@@ -32,6 +34,7 @@ export default {
     SectionUno,
     SectionDue,
     FooterSezUno,
+    FooterSezDue
   }
 }
 </script>

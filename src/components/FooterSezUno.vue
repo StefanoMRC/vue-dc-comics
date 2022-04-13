@@ -185,7 +185,7 @@ export default {
                 
             }
             .col{
-                padding: 0 30px;
+                margin: 0 30px;
             }
             h2{
                 color: $bianco;
@@ -197,10 +197,14 @@ export default {
                     margin: 0;
                     padding: 0;
                 li{
+                    margin: 2px 0;
                     a{
-                        padding: 10px 0;
+                        
                         text-decoration: none;
                         color: $grigio;
+                        &:hover{
+                            color: $bianco;
+                        }
                     }
                 }
             }
