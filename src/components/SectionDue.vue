@@ -56,9 +56,11 @@ export default {
 div{
     background: $blu;
     text-align: center;
+
    ul{
-       @include lista(center, row, center);
-            margin: 0;
+      width: 80%;
+       @include lista(space-between, row, center);
+            margin: auto;
             padding: 0;
         li{
             display: flex;
