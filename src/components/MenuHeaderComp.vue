@@ -69,7 +69,7 @@ export default {
      width: 80%;
      margin: 0 auto;
          ul{
-            @include lista(center, row, center);
+            @include lista(end, row, center);
             margin: 0;
             padding: 0;
             height: 98%;
@@ -90,6 +90,7 @@ export default {
                             text-decoration: none;
                             padding: 50px 0;
                             color: $nero;
+                            font-weight: bold;
                         }
                 }
 

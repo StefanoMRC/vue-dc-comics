@@ -40,8 +40,13 @@ export default {
 </script>
 
 <style lang="scss">
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Roboto:wght@300&display=swap');
+  html{
+    font-family: 'Roboto';
+  }
   body{
     margin: 0;
+    
   }
   header{
     display: flex;

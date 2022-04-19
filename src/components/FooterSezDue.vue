@@ -2,7 +2,7 @@
   <div>
      <div class="cont">
          <div class="contLeft">
-             <button type="button" class="bottone">sign-un now!</button>
+             <button type="button" class="bottone">sign-up now!</button>
          </div>
          <div class="contRight">
              <p>
