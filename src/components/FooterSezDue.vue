@@ -53,6 +53,9 @@ div{
                 border: 1px solid $blu;
                 font-size: 1.2em;
             }
+            .bottone:hover{
+                color: $blu;
+            }
         }
         .contRight{
             width: 50%;
