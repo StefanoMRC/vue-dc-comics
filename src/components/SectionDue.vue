@@ -68,6 +68,7 @@ div{
             color: $bianco;
             font-size: 0.5em;
             img{
+                max-width: 60px;
                 height: 50px;
                 padding: 0 10px;
             }
