@@ -27,7 +27,7 @@ export default {
    button{
       font-size: 1.2em;
       text-transform: uppercase;
-      padding: 5px 10px;
+      padding: 5px 25px;
       background: $blu;
       color: $bianco;
       border: 0;

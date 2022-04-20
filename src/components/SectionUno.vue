@@ -139,7 +139,7 @@ div{
     button{
       font-size: 1.2em;
       text-transform: uppercase;
-      padding: 5px 10px;
+      padding: 5px 40px;
       background: $blu;
       color: $bianco;
       border: 0;

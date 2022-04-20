@@ -4,6 +4,7 @@
       
          
             <div>
+              <div class="contImg"></div> 
               <img :src="img" alt="">
               <h3>{{titolo}}</h3>
             </div>
@@ -27,10 +28,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-   
-
-            
-
                 div{
                     margin: 5px 30px;
                     flex-basis: calc((100%/6) - 60px);
@@ -41,7 +38,7 @@ export default {
                         color: white;
                     }
                 }
-            
+
         
     
 </style>
